@@ -44,6 +44,7 @@
 
     <!-- Template Main CSS File -->
     <link href="./assets/css/style.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   </head>
 
   <body>
@@ -632,10 +633,11 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
               <form
-                action="forms/contact.php"
+                action="https://leadsbox.youtute.me/api/contact"
                 method="post"
                 role="form"
                 class="php-email-form"
+                id="contact-form"
               >
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -679,14 +681,14 @@
                   ></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Загрузка...</div>
                   <div class="error-message"></div>
                   <div class="sent-message">
                     Ваше сообщение отправлено, мы скоро свяжемся с вами!
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Связаться с нами</button>
+                  <button>Связаться с нами</button>
                 </div>
               </form>
             </div>
