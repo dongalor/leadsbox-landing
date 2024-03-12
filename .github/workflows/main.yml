@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy Leadsbox Landing
 on:
   push:
     branches:
@@ -11,7 +11,7 @@ jobs:
         node-version: [12.x]
     steps:
       - uses: actions/checkout@master
-      - name: Deploy
+      - name: Deploy landing to server
         run: |
           which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y  )
           which rsync || ( apt-get update -y && apt-get install rsync -y )
