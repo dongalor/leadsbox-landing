@@ -1,0 +1,16 @@
+// Variables
+@import "variables/mixin";
+@import "variables/font";
+@import "variables/base-styles";
+
+// Plagins
+@import "libs/normalize.min.css";
+@import "libs/slick-slider";
+
+// Components
+@import "components/header";
+@import "components/footer";
+@import "components/modal";
+
+// Pages
+@import "pages/landing";

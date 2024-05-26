@@ -1,862 +1,511 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>LEADSBOX.RU</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
 
-    <title>LeadsBox // Предлагаем лиды</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:url" content="" />
+    <meta property="og:description" content="" />
 
-    <!-- Favicons -->
-    <link href="./assets/img/favicon.png" rel="icon" />
-    <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <meta name="description" content="" />
+    <meta name="keywords"  content="" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-
-    <!-- Vendor CSS Files -->
-    <link href="./assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="./assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./assets/vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link
-      href="./assets/vendor/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Template Main CSS File -->
-    <link href="./assets/css/style.css" rel="stylesheet" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  </head>
-
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div
-        class="container d-flex align-items-center justify-content-lg-between"
-      >
-        <h1 class="logo me-auto me-lg-0">
-          <a href="#hero">LeadsBox<span>.</span></a>
-        </h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="./assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li><a class="nav-link scrollto" href="#about">О нас</a></li>
-            <li><a class="nav-link scrollto" href="#services">Офферы</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#how">Как это работает?</a>
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#portfolio">Вебмастеру</a>
-            </li>
-            <li><a class="nav-link scrollto" href="#team">Рекламодателю</a></li>
-            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-            <li><a class="nav-link scrollto" href="#contact">Контакты</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
-        <div class="d-flex">
-          <a href="https://app.leadsbox.ru/signin" class="sign-in-btn me-2 px-1"
-            >Войти</a
-          >
-
-          <a href="https://app.leadsbox.ru/signup" class="get-started-btn px-1"
-            >Регистрация</a
-          >
-        </div>
-      </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center justify-content-center">
-      <div class="container" data-aos="fade-up">
-        <div
-          class="row justify-content-center"
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
-          <div class="col-xl-6 col-lg-8">
-            <h1>
-              Добро пожаловать в МИР возможностей CPA-Сети LeadsBox<span
-                >.</span
-              >
-            </h1>
-            <h2>Эксклюзивные офферы. Российская партнёрская сеть.</h2>
-          </div>
-        </div>
-
-        <div
-          class="row gy-4 mt-5 justify-content-center"
-          data-aos="zoom-in"
-          data-aos-delay="250"
-        >
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line"></i>
-              <h3><a href="">Лучшие офферы</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="ri-bar-chart-box-line"></i>
-              <h3><a href="">Расширенная география</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="ri-calendar-todo-line"></i>
-              <h3><a href="">Удобные фильтры</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="ri-paint-brush-line"></i>
-              <h3><a href="">Быстрые выплаты</a></h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Hero -->
-
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div
-              class="col-lg-6 order-1 order-lg-2"
-              data-aos="fade-left"
-              data-aos-delay="100"
-            >
-              <img src="./assets/img/about.jpg" class="img-fluid" alt="" />
-            </div>
-            <div
-              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              <div class="section-title mb-1 pb-1">
-                <h2>О нас</h2>
-                <p>Немного информации о нас</p>
-              </div>
-              <p class="fst-italic">
-                LeadsBox - лидирующая CPA-сеть на российском рынке
-                лидогенерации. Мы объединяем тысячи вебмастеров, рекламодателей
-                и партнеров для успешного win-to-win сотрудничества.
-              </p>
-              <ul>
-                <li>
-                  <i class="ri-check-double-line"></i>Мы предлагаем выдающиеся
-                  условия по офферам, которые призваны удовлетворить лучших
-                  веб-мастеров и рекламодателей.
-                </li>
-                <li>
-                  <i class="ri-check-double-line"></i> Лучшие условия для
-                  веб-мастеров и рекламодателей.
-                </li>
-              </ul>
-              <p>
-                Сразу после регистрации каждый вебмастер получает
-                привилегированные ставки на наши офферы, а также доступ ко всем
-                бонусам, предоставляемым в рамках масштабных акций. Ваш личный
-                менеджер всегда готов помочь вам выбрать офферы, наилучшим
-                образом соответствующие вашему стилю работы, и предоставит
-                индивидуальные условия для качественного трафика.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients">
-        <div class="container" data-aos="zoom-in">
-          <div class="section-title mb-1 pb-1">
-            <h2>Среди наших клиентов</h2>
-          </div>
-          <div class="clients-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-1.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-2.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-3.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-4.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-5.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-6.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-7.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./assets/img/clients/client-8.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End Clients Section -->
-
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Офферы</h2>
-            <p>Эксклюзивный выбор офферов</p>
-          </div>
-
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4><a href="">Индивидуальная поддержка</a></h4>
-                <p>
-                  Менеджеры помогут выбрать подходящие офферы и подскажут, как
-                  заработать на них
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4><a href="">Эксклюзивные офферы</a></h4>
-                <p>Офферы от лидирующих компаний различных отраслей.</p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4><a href="">Удобные фильтры</a></h4>
-                <p>Фильтры по географии, времени и пр.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section -->
-
-      <!-- ======= HOW Section ======= -->
-      <section id="how" class="team">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Как это работает?</h2>
-            <p>Как это работает?</p>
-          </div>
-
-          <div class="row">
-            <div class="image col-lg-6" data-aos="fade-right">
-              <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-                <h1>Вебмастеру</h1>
-                <h4>Регистрируйся</h4>
-                <p>
-                  Мы свяжемся с тобой после для активации кабинета и офферов.
-                </p>
-                <h4>Будь на связи</h4>
-                <p>
-                  Наш менеджер поможет тебе освоиться во всем - введет в курс
-                  дела, поможет на каждом этапе и подскажет
-                </p>
-                <h4>Привлекай трафик и получай вознаграждение</h4>
-                <p>
-                  С момента активации офферов привлекай траффик по поточным
-                  ссылкам и получай вознаграждения за успешные целевые действия.
-                  Мы предлагаем высокие ставки на рынке, оперативную выплату
-                  тебе на счет и реферальную программу
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-              <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-                <h1>Рекламодателю</h1>
-                <h4>Оставьте заявку</h4>
-                <p>
-                  Оставьте заявку со своими контактными данными, наш менеджер
-                  оперативно свяжется с вами для обсуждения офферов и условий
-                </p>
-                <h4>Получайте лиды и траффик</h4>
-                <p>
-                  Получайте качественные лиды и траффик от наших ваб-мастеров
-                </p>
-                <h4>Фиксируйте прибыль</h4>
-                <p>Пока наши вебмастера работают вы получаете прибыль</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Team Section -->
-
-      <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
-        <div class="container" data-aos="zoom-in">
-          <div class="text-center">
-            <h3>Начни зарабатывать прямо сейчас</h3>
-
-            <a class="cta-btn" href="https://app.leadsbox.ru/signup"
-              >Зарегистрироваться</a
-            >
-          </div>
-        </div>
-      </section>
-      <!-- End Cta Section -->
-
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Вебмастеру</h2>
-            <p>Что можем дать вебмастеру</p>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-              <div
-                class="icon-box mt-5 mt-lg-0"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Эксклюзивный выбор офферов</h4>
-                <p>Уже 2 года делаем вас счастливее и богаче</p>
-              </div>
-              <div
-                class="icon-box mt-2"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Топовые условия по офферам</h4>
-                <p>Лучшие условия для лучших веб-мастеров и рекламодателей.</p>
-              </div>
-              <div
-                class="icon-box mt-2"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Никаких переплат</h4>
-                <p>Оплата только за релевантные лиды и трафик</p>
-              </div>
-              <div
-                class="icon-box mt-2"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Хотите зарабатывать с нами?</h4>
-                <p>
-                  Регистрируйтесь
-                  <a href="https://app.leadsbox.ru/signup">здесь</a>!
-                </p>
-              </div>
-            </div>
-            <div
-              class="image col-lg-6 rounded-1"
-              style="
-                background-image: url('assets/img/webmaster.jpeg');
-                background-size: 100% 100%;
-              "
-              data-aos="fade-right"
-            ></div>
-          </div>
-        </div>
-      </section>
-      <!-- End Portfolio Section -->
-
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials">
-        <div class="container" data-aos="zoom-in">
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="./assets/img/testimonials/testimonials-1.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="./assets/img/testimonials/testimonials-2.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse
-                    labore quem cillum quid cillum eram malis quorum velit fore
-                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="./assets/img/testimonials/testimonials-3.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore quem
-                    eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="./assets/img/testimonials/testimonials-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="./assets/img/testimonials/testimonials-5.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quiss quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End Testimonials Section -->
-
-      <!-- ======= Team Section ======= -->
-      <section id="team" class="team">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Рекламодателю</h2>
-            <p>Что мы предлагаем рекламодателю?</p>
-          </div>
-
-          <div class="row">
-            <div
-              class="image col-lg-6 rounded-1"
-              style="background-image: url('assets/img/features.jpg')"
-              data-aos="fade-right"
-            ></div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-              <div
-                class="icon-box mt-5 mt-lg-0"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Полное сопровождение и менеджмент</h4>
-                <p>
-                  Бесплатное консультирование технического специалиста и
-                  техническая поддержка во время подключения.
-                </p>
-              </div>
-              <div
-                class="icon-box mt-2"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Источники лидов</h4>
-                <p>Качественные источники трафика и максимально целевые лиды</p>
-              </div>
-              <div
-                class="icon-box mt-2"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Возможность для валидации</h4>
-                <p>Предлагаем возможность дополнительной валидации лидов</p>
-              </div>
-              <div
-                class="icon-box mt-2"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Без переплат</h4>
-                <p>Оплата только за релевантные лиды и трафик</p>
-              </div>
-              <div
-                class="icon-box mt-2"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                <h4>Хотите стать рекламодателем?</h4>
-                <p>
-                  <a href="#contact">Оставьте заявку</a> и наш менеджер свяжется
-                  с вами!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Team Section -->
-
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Контакты</h2>
-            <p>Свяжитесь с нами</p>
-          </div>
-
-          <!-- <div>
-            <iframe
-              style="border: 0; width: 100%; height: 270px"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div> -->
-          <div style="position: relative; overflow: hidden">
-            <iframe
-              src="https://yandex.com/map-widget/v1/?indoorLevel=1&ll=37.537231%2C55.749478&mode=search&sctx=ZAAAAAgCEAAaKAoSCfFmDd5XtSVAEXmxMEROl0hAEhIJ9N4YAoAdV0ARmIV2TrMUQEAiBgABAgMEBSgKOABA2q0HSAFqAnVhnQHNzEw9oAEAqAEAvQF35MBCwgER%2BJnljJQFyYqs3X7d%2B5HTvgLqAQDyAQD4AQCCAkbQky4g0JzQvtGB0LrQstCwLCDQnNC%2B0YHQutCy0LAg0KHQuNGC0LgsINCx0LDRiNC90Y8g0KTQtdC00LXRgNCw0YbQuNGPigIAkgIDMjEzmgIMZGVza3RvcC1tYXBz&sll=37.537231%2C55.749478&sspn=0.007446%2C0.002220&text=%D0%93.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D0%A1%D0%B8%D1%82%D0%B8%2C%20%D0%B1%D0%B0%D1%88%D0%BD%D1%8F%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F&utm_source=share&z=17.6"
-              width="100%"
-              height="270"
-              frameborder="1"
-              allowfullscreen="true"
-              style="position: relative"
-            ></iframe>
-          </div>
-
-          <div class="row mt-2">
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="bi bi-geo-alt"></i>
-                  <h4>Расположение:</h4>
-                  <p>Г. Москва, Москва Сити, башня Федерация</p>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--  Header  -->
+    <div class="header">
+        <div class="row__cont">
+            <div class="header__wrap">
+                <div class="header__logo">
+                    <a href="index.html" class="logo" id="logo">LEADSBOX<span class="green">.RU</span></a>
                 </div>
 
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>support@leadsbox.ru</p>
-                </div>
+                <div class="header__nav">
+                    <a href="#" class="header__nav-item header__nav-item--pink">Войти</a>
+                    <a href="#" class="header__nav-item header__nav-item--green">Регистрация</a>
 
-                <div class="phone">
-                  <i class="bi bi-phone"></i>
-                  <h4>Звоните:</h4>
-                  <p>+7 926 xxx-xx-xx</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-lg-8 mt-5 mt-lg-0">
-              <form
-                action="https://leadsbox.ru/api/contact"
-                method="post"
-                role="form"
-                class="php-email-form"
-                id="contact-form"
-              >
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Ваше имя"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="Ваш Email"
-                      required
-                    />
-                  </div>
+                    <div class="header__nav-item header__nav-item--burger">
+                        <div class="header__burger-icon">
+                            <span>menu</span>
+                            <div></div>
+                        </div>
+
+                        <div class="header__burger-dropdown">
+                            <div class="header__burger-list">
+                                <a href="#" class="header__burger-item">о нас</a>
+                                <a href="#" class="header__burger-item">офферы</a>
+                                <a href="#" class="header__burger-item">как это работает?</a>
+                                <a href="#" class="header__burger-item">рекламодателю</a>
+                                <a href="#" class="header__burger-item">контакты</a>
+                            </div>
+                            <div class="header__burger-social">
+                                <a href="#" class="header__burger-social_item">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect class="svg-rect" x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                        <path class="svg-path" d="M35 18.8979C34.2645 19.2186 33.4744 19.4353 32.6438 19.5333C33.5008 19.0286 34.142 18.2343 34.4477 17.2986C33.6425 17.7693 32.7612 18.1006 31.8422 18.2781C31.2242 17.6288 30.4057 17.1984 29.5136 17.0537C28.6216 16.9091 27.706 17.0583 26.909 17.4783C26.1119 17.8982 25.4781 18.5654 25.1058 19.3761C24.7336 20.1869 24.6437 21.0959 24.8503 21.9621C23.2187 21.8814 21.6226 21.4641 20.1655 20.7372C18.7085 20.0102 17.423 18.9899 16.3926 17.7424C16.0403 18.3405 15.8377 19.034 15.8377 19.7725C15.8373 20.4373 16.0036 21.092 16.322 21.6784C16.6404 22.2648 17.1009 22.7648 17.6627 23.134C17.0112 23.1136 16.374 22.9403 15.8042 22.6286V22.6806C15.8041 23.6131 16.1319 24.5169 16.7319 25.2386C17.3318 25.9603 18.1671 26.4555 19.0958 26.6402C18.4914 26.8012 17.8577 26.8249 17.2426 26.7096C17.5046 27.5119 18.0151 28.2135 18.7024 28.7162C19.3898 29.2188 20.2197 29.4974 21.0759 29.5128C19.6224 30.6357 17.8273 31.2448 15.9795 31.2421C15.6521 31.2422 15.3251 31.2234 15 31.1858C16.8757 32.3726 19.0591 33.0024 21.2891 33C28.8378 33 32.9644 26.8474 32.9644 21.5113C32.9644 21.338 32.96 21.1629 32.9521 20.9895C33.7548 20.4183 34.4476 19.7109 34.9982 18.9005L35 18.8979Z" fill="#000"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header__burger-social_item">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect class="svg-rect" x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                        <path class="svg-path" d="M26.4964 35V25.8919H29.458L29.8982 22.3258H26.4964V20.0543C26.4964 19.0253 26.7727 18.3207 28.1962 18.3207H30V15.1413C29.1224 15.0437 28.2402 14.9966 27.3575 15.0002C24.7397 15.0002 22.9424 16.6582 22.9424 19.702V22.3191H20V25.8852H22.9488V35H26.4964Z" fill="#000"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header__burger-social_item">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect class="svg-rect" x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                        <path class="svg-path" d="M24.9973 21.6652C23.1611 21.6652 21.6626 23.1638 21.6626 25C21.6626 26.8362 23.1611 28.3348 24.9973 28.3348C26.8335 28.3348 28.332 26.8362 28.332 25C28.332 23.1638 26.8335 21.6652 24.9973 21.6652ZM34.9989 25C34.9989 23.6191 35.0114 22.2506 34.9338 20.8722C34.8563 19.2711 34.4911 17.8502 33.3203 16.6794C32.147 15.5061 30.7286 15.1433 29.1275 15.0658C27.7466 14.9882 26.3782 15.0007 24.9998 15.0007C23.6189 15.0007 22.2505 14.9882 20.8721 15.0658C19.271 15.1433 17.8501 15.5086 16.6793 16.6794C15.5061 17.8527 15.1433 19.2711 15.0658 20.8722C14.9882 22.2531 15.0007 23.6216 15.0007 25C15.0007 26.3784 14.9882 27.7494 15.0658 29.1278C15.1433 30.7289 15.5086 32.1498 16.6793 33.3206C17.8526 34.4939 19.271 34.8567 20.8721 34.9342C22.253 35.0118 23.6214 34.9993 24.9998 34.9993C26.3807 34.9993 27.7491 35.0118 29.1275 34.9342C30.7286 34.8567 32.1495 34.4914 33.3203 33.3206C34.4936 32.1473 34.8563 30.7289 34.9338 29.1278C35.0139 27.7494 34.9989 26.3809 34.9989 25ZM24.9973 30.131C22.1579 30.131 19.8664 27.8394 19.8664 25C19.8664 22.1606 22.1579 19.869 24.9973 19.869C27.8367 19.869 30.1282 22.1606 30.1282 25C30.1282 27.8394 27.8367 30.131 24.9973 30.131ZM30.3383 20.8572C29.6754 20.8572 29.14 20.3218 29.14 19.6589C29.14 18.9959 29.6754 18.4606 30.3383 18.4606C31.0013 18.4606 31.5366 18.9959 31.5366 19.6589C31.5368 19.8163 31.5059 19.9722 31.4458 20.1177C31.3856 20.2632 31.2974 20.3954 31.1861 20.5067C31.0748 20.618 30.9426 20.7062 30.7971 20.7664C30.6516 20.8265 30.4957 20.8574 30.3383 20.8572Z" fill="#000"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header__burger-social_item">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect class="svg-rect" x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                        <path class="svg-path" d="M26.4551 34.3301C24.9863 34.5596 23.4842 34.4389 22.0709 33.9781C20.6576 33.5172 19.3731 32.7291 18.322 31.678C17.2709 30.6269 16.4828 29.3424 16.0219 27.9291C15.5611 26.5158 15.4404 25.0137 15.6699 23.5449C15.0909 22.4437 14.8793 21.1861 15.0661 19.956C15.2529 18.7259 15.8282 17.5877 16.708 16.708C17.5877 15.8282 18.7259 15.2529 19.956 15.0661C21.1861 14.8793 22.4437 15.0909 23.5449 15.6699C25.0137 15.4404 26.5158 15.5611 27.9291 16.0219C29.3424 16.4828 30.6269 17.2709 31.678 18.322C32.7291 19.3731 33.5172 20.6576 33.9781 22.0709C34.4389 23.4842 34.5596 24.9863 34.3301 26.4551C34.9091 27.5563 35.1207 28.8139 34.9339 30.044C34.7471 31.2741 34.1718 32.4123 33.292 33.292C32.4123 34.1718 31.2741 34.7471 30.044 34.9339C28.8139 35.1207 27.5563 34.9091 26.4551 34.3301ZM25.0578 30.7269H25.0133C28.2033 30.7269 29.7928 29.1875 29.7928 27.1248C29.7928 25.7942 29.1808 24.3802 26.765 23.8393L24.5624 23.3506C23.7238 23.1595 22.7608 22.9063 22.7608 22.1121C22.7608 21.3179 23.4494 20.7648 24.6757 20.7648C27.1526 20.7648 26.9271 22.462 28.1534 22.462C28.7931 22.462 29.3674 22.0821 29.3674 21.429C29.3674 19.9073 26.9271 18.7633 24.8623 18.7633C22.6175 18.7633 20.2272 19.7174 20.2272 22.2554C20.2272 23.475 20.6648 24.7767 23.0707 25.3799L26.0574 26.1252C26.9638 26.3495 27.1881 26.8571 27.1881 27.3159C27.1881 28.0789 26.4284 28.8242 25.0578 28.8242C22.3731 28.8242 22.7497 26.7616 21.3102 26.7616C20.6659 26.7616 20.1961 27.2037 20.1961 27.8401C20.1961 29.0775 21.6978 30.7269 25.0578 30.7269Z" fill="#000"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header__burger-social_item">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect class="svg-rect" x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                        <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M22.429 21.969H26.143V23.819C26.678 22.755 28.05 21.799 30.111 21.799C34.062 21.799 35 23.917 35 27.803V35H31V28.688C31 26.475 30.465 25.227 29.103 25.227C27.214 25.227 26.429 26.572 26.429 28.687V35H22.429V21.969ZM15.57 34.83H19.57V21.799H15.57V34.83ZM20.143 17.55C20.1431 17.8853 20.0767 18.2172 19.9474 18.5266C19.8181 18.8359 19.6287 19.1165 19.39 19.352C18.9064 19.8326 18.2518 20.1017 17.57 20.1C16.8894 20.0995 16.2363 19.8312 15.752 19.353C15.5142 19.1167 15.3254 18.8358 15.1963 18.5264C15.0673 18.217 15.0006 17.8852 15 17.55C15 16.873 15.27 16.225 15.753 15.747C16.2369 15.2682 16.8902 14.9997 17.571 15C18.253 15 18.907 15.269 19.39 15.747C19.872 16.225 20.143 16.873 20.143 17.55Z" fill="#000"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="header__burger-signup">
+                                <a href="#" class="header__nav-item header__nav-item--pink">Войти</a>
+                                <a href="#" class="header__nav-item header__nav-item--green">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group mt-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Тема обращения"
-                    required
-                  />
-                </div>
-                <div class="form-group mt-3">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="5"
-                    placeholder="Сообщение"
-                    required
-                  ></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Загрузка...</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Ваше сообщение отправлено, мы скоро свяжемся с вами!
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button>Связаться с нами</button>
-                </div>
-              </form>
             </div>
-          </div>
         </div>
-      </section>
-      <!-- End Contact Section -->
-    </main>
-    <!-- End #main -->
+    </div>
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-info">
-                <h3>LeadsBox<span>.</span></h3>
-                <p>
-                  Россия, г. Москва,<br />
-                  Москва Сити, башня Федерация<br /><br />
-                  <strong>Телефон:</strong> +7 926 xxx-xx-xx<br />
-                  <strong>Email:</strong> info@leadsbox.ru<br />
-                </p>
-                <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="#" class="facebook"
-                    ><i class="bx bxl-facebook"></i
-                  ></a>
-                  <a href="#" class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                  <a href="#" class="google-plus"
-                    ><i class="bx bxl-skype"></i
-                  ></a>
-                  <a href="#" class="linkedin"
-                    ><i class="bx bxl-linkedin"></i
-                  ></a>
+    <!--  Banner first -->
+    <div class="banner banner--first">
+        <div class="row__cont">
+            <div class="banner__content">
+                <div class="banner__description">
+                    <div class="banner__description-top">
+                        <p class="banner__title">Добро пожаловать<br>в <span class="white">Мир возможностей<br>CPA-Сети</span> LeadsBox<span class="green">.ru</span></p>
+                        <div class="banner__img-list">
+                            <div class="banner__img-item">Лучшие офферы</div>
+                            <div class="banner__img-item">Расширенная география</div>
+                            <div class="banner__img-item">Удобные фильтры</div>
+                            <div class="banner__img-item">Быстрые выплаты</div>
+                        </div>
+                    </div>
+                    <div class="banner__description-bottom">
+                        <div class="banner__description-action">
+                            <p class="banner__txt">Эксклюзивные офферы.<br>Российская партнёрская сеть.</p>
+                            <div class="banner__btn" id="modalBtn">оставить заявку</div>
+                        </div>
+
+                        <div class="banner__img">
+                            <img src="img/banner-img.png" alt="banner">
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 footer-links">
-              <h4>Полезные ссылки</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Домой</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">О нас</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Вебмастеру</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Условия использования</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Политика конфиденциальности</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Подпишись на нашу рассылку</h4>
-              <p>
-                Чтобы быть в курсе всех событий и нововведений, подпишись на
-                нашу рассылку.
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Подписаться"
-                />
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <div class="container">
-        <div class="copyright">
-          &copy; <strong><span>LeadsBox</span></strong
-          >. Все права защищены
+    <!--  Banner second -->
+    <div class="banner banner--second">
+        <div class="row__cont">
+            <div class="banner__content">
+                <div class="banner__description">
+                    <p class="banner__title">
+                        <span class="banner__subtitle">о компании</span>
+                        НЕМНОГО ИНФОРМАЦИИ О НАС
+                    </p>
+                    <p class="banner__txt">LeadsBox.ru - лидирующая CPA-сеть на российском рынке лидогенерации. Мы объединяем тысячи вебмастеров, рекламодателей и партнеров для успешного win-to-win сотрудничества.</p>
+                    <div class="banner__txt-description">
+                        Сразу после регистрации вебмастер получает привилегированные ставки на офферы, а также доступ ко всем бонусам в рамках акций. Личный менеджер всегда готов помочь выбрать офферы, соответствующие вашему стилю работы, и предоставить индивидуальные условия для качественного трафика.
+                        <div class="banner__img">
+                            <img src="img/banner-second.jpg" alt="banner second">
+                        </div>
+                    </div>
+
+                    <div class="banner__logos-list">
+                        <div class="banner__logo"><div class="one"></div></div>
+                        <div class="banner__logo"><div class="two"></div></div>
+                    </div>
+                </div>
+                <div class="banner__img">
+                    <img src="img/banner-second.jpg" alt="banner second">
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
 
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <!--  Banner third -->
+    <div class="banner banner--third">
+        <div class="row__cont">
+            <div class="banner__content">
+                <div class="banner__description">
+                    <p class="banner__title">
+                        <span class="banner__subtitle">офферы</span>
+                        ЭКСКЛЮЗИВНЫЙ ВЫБОР ОФФЕРОВ
+                    </p>
+                </div>
+                <div class="banner__list">
+                    <div class="banner__item">
+                        <div class="banner__item-info">
+                            <i class="icn icn--one"></i>
+                            <div class="banner__txt-wrap">
+                                <p class="banner__txt">Индивидуальная поддержка</p>
+                                <p class="banner__txt-description">Менеджеры помогут выбрать подходящие офферы и подскажут, как заработать на них</p>
+                            </div>
+                        </div>
 
-    <!-- Vendor JS Files -->
-    <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="./assets/vendor/aos/aos.js"></script>
-    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/vendor/php-email-form/validate.js"></script>
+                        <div class="banner__img">
+                            <img src="img/banner-second.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__item-info">
+                            <i class="icn icn--two"></i>
+                            <div class="banner__txt-wrap">
+                                <p class="banner__txt">Эксклюзивные офферы</p>
+                                <p class="banner__txt-description">Офферы от лидирующих компаний различных отраслей.</p>
+                            </div>
+                        </div>
 
-    <!-- Template Main JS File -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+                        <div class="banner__img">
+                            <img src="img/banner-second.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__item-info">
+                            <i class="icn icn--three"></i>
+                            <div class="banner__txt-wrap">
+                                <p class="banner__txt">Удобные фильтры</p>
+                                <p class="banner__txt-description">Фильтры по географии, времени и пр.</p>
+                            </div>
+                        </div>
+
+                        <div class="banner__img">
+                            <img src="img/banner-second.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Banner fourth -->
+    <div class="banner banner--fourth">
+        <div class="row__cont">
+            <div class="banner__content">
+                <p class="banner__title">КАК ЭТО РАБОТАЕТ?</p>
+                <div class="banner__list">
+                    <div class="banner__item">
+                        <div class="banner__sublist">
+                            <div class="banner__subitem">
+                                <p class="banner__subtitle green">вебмастеру</p>
+                            </div>
+                            <div class="banner__subitem">
+                                <p class="banner__txt">Cвяжемся с вами</p>
+                                <p class="banner__txt-description">Мы свяжемся с тобой после для активации кабинета и офферов.</p>
+                            </div>
+                            <div class="banner__subitem">
+                                <p class="banner__txt">Будь на связи</p>
+                                <p class="banner__txt-description">Менеджер поможет освоиться во всем - введет в курс дела, подскажет на каждом этапе</p>
+                            </div>
+                            <div class="banner__subitem">
+                                <p class="banner__txt">Привлекайте трафик и получай вознаграждение</p>
+                                <p class="banner__txt-description">С момента активации офферов привлекай траффик по поточным ссылкам и получай вознаграждения за успешные целевые действия. Мы предлагаем высокие ставки на рынке, оперативную выплату тебе на счет и реферальную программу</p>
+                            </div>
+                        </div>
+                        <a href="#" class="banner__btn green-bg">оставить заявку</a>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__sublist">
+                            <div class="banner__subitem">
+                                <p class="banner__subtitle pink">рекламодателю</p>
+                            </div>
+                            <div class="banner__subitem">
+                                <p class="banner__txt">Оставьте заявку</p>
+                                <p class="banner__txt-description">Оставьте заявку со своими контактными данными, наш менеджер оперативно свяжется с вами для обсуждения офферов и условий</p>
+                            </div>
+                            <div class="banner__subitem">
+                                <p class="banner__txt">Получайте лиды и трафик</p>
+                                <p class="banner__txt-description">Получайте качественные лиды и траффик от наших ваб-мастеров</p>
+                            </div>
+                            <div class="banner__subitem">
+                                <p class="banner__txt">Фиксируйте прибыль</p>
+                                <p class="banner__txt-description">Пока наши вебмастера работают вы получаете прибыль</p>
+                            </div>
+                        </div>
+                        <a href="#" class="banner__btn pink-bg">оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Banner fifth -->
+    <div class="banner banner--fifth">
+        <div class="row__cont">
+            <div class="banner__content">
+                <p class="banner__title">Начни зарабатывать<br>прямо сейчас</p>
+                <a href="#" class="banner__btn">зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+    <!--  Banner sixth -->
+    <div class="banner banner--sixth">
+        <div class="row__cont">
+            <div class="banner__content">
+                <p class="banner__title">ЧТО МОЖЕМ ДАТЬ ВЕБМАСТЕРУ</p>
+                <div class="banner__list">
+                    <div class="banner__item">
+                        <div class="banner__img"><img src="img/banner-sixth.jpg" alt=""></div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__sublist">
+                            <div class="banner__subitem one">
+                                <p class="banner__txt">Эксклюзивный выбор офферов</p>
+                                <p class="banner__txt-description">Уже 2 года делаем вас счастливее и богаче</p>
+                            </div>
+                            <div class="banner__subitem two">
+                                <p class="banner__txt">Топовые условия по офферам</p>
+                                <p class="banner__txt-description">Лучшие условия для лучших веб-мастеров и рекламодателей</p>
+                            </div>
+                            <div class="banner__subitem three">
+                                <p class="banner__txt">Никаких переплат</p>
+                                <p class="banner__txt-description">Оплата только за релевантные лиды и трафик</p>
+                            </div>
+                            <div class="banner__subitem four">
+                                <p class="banner__txt">Хотите зарабатывать с нами?</p>
+                                <p class="banner__txt-description">
+                                    Регистрируйтесь
+                                    <span class="label pink-bg">здесь</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Banner seventh -->
+    <div class="banner banner--seventh">
+        <div class="row__cont">
+            <div class="banner__content">
+                <p class="banner__title">отзывы</p>
+
+                <div class="banner__slider">
+                    <div class="banner__slider-item">
+                        <div class="wrap">
+                            <p class="banner__txt">Однозначно, представители современных социальных резервов, инициированные исключительно синтетически, описаны максимально подробно. Банальные, но неопровержимые выводы, а также действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, описаны максимально подробно. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов, вне зависимости от их уровня, должны быть ассоциативно распределены по отраслям.</p>
+                            <div class="banner__user">
+                                <div class="banner__user-img">
+                                    <img src="img/icon/slider/avatar.png" alt="">
+                                </div>
+                                <div class="banner__user-info">
+                                    <h3>Евгений Иванов</h3>
+                                    <p>дизайнер</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__slider-item">
+                        <div class="wrap">
+                            <p class="banner__txt">Однозначно, представители современных социальных резервов, инициированные исключительно синтетически, описаны максимально подробно. Банальные, но неопровержимые выводы, а также действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, описаны максимально подробно. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов, вне зависимости от их уровня, должны быть ассоциативно распределены по отраслям.</p>
+                            <div class="banner__user">
+                                <div class="banner__user-img">
+                                    <img src="img/icon/slider/avatar.png" alt="Avatar">
+                                </div>
+                                <div class="banner__user-info">
+                                    <h3>Евгений Иванов</h3>
+                                    <p>дизайнер</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Banner eighth -->
+    <div class="banner banner--eighth">
+        <div class="row__cont">
+            <div class="banner__content">
+                <p class="banner__title">ЧТО МЫ ПРЕДЛАГАЕМ РЕКЛАМОДАТЕЛЮ?</p>
+                <div class="banner__list">
+                    <div class="banner__item">
+                        <div class="banner__sublist">
+                            <div class="banner__subitem one">
+                                <p class="banner__txt">Полное сопровождение и менеджмент</p>
+                                <p class="banner__txt-description">Бесплатное консультирование технического специалиста и техническая поддержка во время подключения.</p>
+                            </div>
+                            <div class="banner__subitem two">
+                                <p class="banner__txt">Источники трафика</p>
+                                <p class="banner__txt-description">Качественные источники трафика и максимально целевые лиды</p>
+                            </div>
+                            <div class="banner__subitem three">
+                                <p class="banner__txt">Возможность для валидации</p>
+                                <p class="banner__txt-description">Предлагаем возможность дополнительной валидации лидов</p>
+                            </div>
+                            <div class="banner__subitem four">
+                                <p class="banner__txt">Без переплат</p>
+                                <p class="banner__txt-description">Оплата только за релевантные лиды и трафик</p>
+                            </div>
+                            <div class="banner__subitem five">
+                                <p class="banner__txt">Хотите стать рекламодателем?</p>
+                                <p class="banner__txt-description">
+                                    <span class="label green-bg">Оставьте заявку</span>
+                                    и наш менеджер свяжется с вами!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__img"><img src="img/banner-sixth.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Banner ninth -->
+    <div class="banner banner--ninth">
+        <div class="row__cont">
+            <div class="banner__content">
+                <div class="banner__form">
+                    <p class="banner__title">СВЯЖИТЕСЬ С НАМИ</p>
+                    <div class="banner__form-group">
+                        <div class="banner__form-control">
+                            <label for="" class="banner__form-label">
+                                <span>телефон</span>
+                                <input type="text" class="banner__form-input">
+                            </label>
+                            <label for="" class="banner__form-label">
+                                <span>адрес</span>
+                                <input type="text" class="banner__form-input">
+                            </label>
+                            <label for="" class="banner__form-label">
+                                <span>email</span>
+                                <input type="text" class="banner__form-input">
+                            </label>
+                        </div>
+                        <div class="banner__form-control">
+                            <div class="banner__form-control--double">
+                                <input type="text" placeholder="ваше имя" class="banner__form-input">
+                                <input type="text" placeholder="email" class="banner__form-input">
+                            </div>
+                            <input type="text" placeholder="тема сообщения" class="banner__form-input">
+                            <textarea placeholder="ваше имя" class="banner__form-input banner__form-input--textarea"></textarea>
+
+                            <input type="submit" placeholder="отправить" class="banner__form-btn">
+                            <div class="banner__form-info">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="banner__form-link pink">Политикой конфиденциальности</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed89a8f1bf32c272475492248ebd09fcedba2559965438019d5b4124d2ec84a0&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Footer -->
+    <div class="footer">
+        <div class="row__cont">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo footer__logo--mobile">LEADSBOX<span class="green">.RU</span></a>
+                    <a href="tel:+79261234567" class="footer__phone">+7 926 123-45-67</a>
+                    <p class="footer__txt">Москва, Москва Сити, башня Федерация</p>
+                    <a href="mailto:support@leadsbox.ru" class="footer__txt">support@leadsbox.ru</a>
+                    <a href="#" class="footer__logo">LEADSBOX<span class="green">.RU</span></a>
+                </div>
+                <div class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-link">о компании</li>
+                        <li class="footer__nav-link">вебмастеру</li>
+                        <li class="footer__nav-link">условия пользования</li>
+                        <li class="footer__nav-link">политика конфиденциальности</li>
+                    </ul>
+                    <div class="footer__nav-social">
+                        <a href="#" class="footer__nav-social_item">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                <path class="svg-path" d="M35 18.8979C34.2645 19.2186 33.4744 19.4353 32.6438 19.5333C33.5008 19.0286 34.142 18.2343 34.4477 17.2986C33.6425 17.7693 32.7612 18.1006 31.8422 18.2781C31.2242 17.6288 30.4057 17.1984 29.5136 17.0537C28.6216 16.9091 27.706 17.0583 26.909 17.4783C26.1119 17.8982 25.4781 18.5654 25.1058 19.3761C24.7336 20.1869 24.6437 21.0959 24.8503 21.9621C23.2187 21.8814 21.6226 21.4641 20.1655 20.7372C18.7085 20.0102 17.423 18.9899 16.3926 17.7424C16.0403 18.3405 15.8377 19.034 15.8377 19.7725C15.8373 20.4373 16.0036 21.092 16.322 21.6784C16.6404 22.2648 17.1009 22.7648 17.6627 23.134C17.0112 23.1136 16.374 22.9403 15.8042 22.6286V22.6806C15.8041 23.6131 16.1319 24.5169 16.7319 25.2386C17.3318 25.9603 18.1671 26.4555 19.0958 26.6402C18.4914 26.8012 17.8577 26.8249 17.2426 26.7096C17.5046 27.5119 18.0151 28.2135 18.7024 28.7162C19.3898 29.2188 20.2197 29.4974 21.0759 29.5128C19.6224 30.6357 17.8273 31.2448 15.9795 31.2421C15.6521 31.2422 15.3251 31.2234 15 31.1858C16.8757 32.3726 19.0591 33.0024 21.2891 33C28.8378 33 32.9644 26.8474 32.9644 21.5113C32.9644 21.338 32.96 21.1629 32.9521 20.9895C33.7548 20.4183 34.4476 19.7109 34.9982 18.9005L35 18.8979Z" fill="#52D789"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__nav-social_item">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                <path class="svg-path" d="M26.4964 35V25.8919H29.458L29.8982 22.3258H26.4964V20.0543C26.4964 19.0253 26.7727 18.3207 28.1962 18.3207H30V15.1413C29.1224 15.0437 28.2402 14.9966 27.3575 15.0002C24.7397 15.0002 22.9424 16.6582 22.9424 19.702V22.3191H20V25.8852H22.9488V35H26.4964Z" fill="#52D789"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__nav-social_item">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                <path class="svg-path" d="M24.9973 21.6652C23.1611 21.6652 21.6626 23.1638 21.6626 25C21.6626 26.8362 23.1611 28.3348 24.9973 28.3348C26.8335 28.3348 28.332 26.8362 28.332 25C28.332 23.1638 26.8335 21.6652 24.9973 21.6652ZM34.9989 25C34.9989 23.6191 35.0114 22.2506 34.9338 20.8722C34.8563 19.2711 34.4911 17.8502 33.3203 16.6794C32.147 15.5061 30.7286 15.1433 29.1275 15.0658C27.7466 14.9882 26.3782 15.0007 24.9998 15.0007C23.6189 15.0007 22.2505 14.9882 20.8721 15.0658C19.271 15.1433 17.8501 15.5086 16.6793 16.6794C15.5061 17.8527 15.1433 19.2711 15.0658 20.8722C14.9882 22.2531 15.0007 23.6216 15.0007 25C15.0007 26.3784 14.9882 27.7494 15.0658 29.1278C15.1433 30.7289 15.5086 32.1498 16.6793 33.3206C17.8526 34.4939 19.271 34.8567 20.8721 34.9342C22.253 35.0118 23.6214 34.9993 24.9998 34.9993C26.3807 34.9993 27.7491 35.0118 29.1275 34.9342C30.7286 34.8567 32.1495 34.4914 33.3203 33.3206C34.4936 32.1473 34.8563 30.7289 34.9338 29.1278C35.0139 27.7494 34.9989 26.3809 34.9989 25ZM24.9973 30.131C22.1579 30.131 19.8664 27.8394 19.8664 25C19.8664 22.1606 22.1579 19.869 24.9973 19.869C27.8367 19.869 30.1282 22.1606 30.1282 25C30.1282 27.8394 27.8367 30.131 24.9973 30.131ZM30.3383 20.8572C29.6754 20.8572 29.14 20.3218 29.14 19.6589C29.14 18.9959 29.6754 18.4606 30.3383 18.4606C31.0013 18.4606 31.5366 18.9959 31.5366 19.6589C31.5368 19.8163 31.5059 19.9722 31.4458 20.1177C31.3856 20.2632 31.2974 20.3954 31.1861 20.5067C31.0748 20.618 30.9426 20.7062 30.7971 20.7664C30.6516 20.8265 30.4957 20.8574 30.3383 20.8572Z" fill="#52D789"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__nav-social_item">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                <path class="svg-path" d="M26.4551 34.3301C24.9863 34.5596 23.4842 34.4389 22.0709 33.9781C20.6576 33.5172 19.3731 32.7291 18.322 31.678C17.2709 30.6269 16.4828 29.3424 16.0219 27.9291C15.5611 26.5158 15.4404 25.0137 15.6699 23.5449C15.0909 22.4437 14.8793 21.1861 15.0661 19.956C15.2529 18.7259 15.8282 17.5877 16.708 16.708C17.5877 15.8282 18.7259 15.2529 19.956 15.0661C21.1861 14.8793 22.4437 15.0909 23.5449 15.6699C25.0137 15.4404 26.5158 15.5611 27.9291 16.0219C29.3424 16.4828 30.6269 17.2709 31.678 18.322C32.7291 19.3731 33.5172 20.6576 33.9781 22.0709C34.4389 23.4842 34.5596 24.9863 34.3301 26.4551C34.9091 27.5563 35.1207 28.8139 34.9339 30.044C34.7471 31.2741 34.1718 32.4123 33.292 33.292C32.4123 34.1718 31.2741 34.7471 30.044 34.9339C28.8139 35.1207 27.5563 34.9091 26.4551 34.3301ZM25.0578 30.7269H25.0133C28.2033 30.7269 29.7928 29.1875 29.7928 27.1248C29.7928 25.7942 29.1808 24.3802 26.765 23.8393L24.5624 23.3506C23.7238 23.1595 22.7608 22.9063 22.7608 22.1121C22.7608 21.3179 23.4494 20.7648 24.6757 20.7648C27.1526 20.7648 26.9271 22.462 28.1534 22.462C28.7931 22.462 29.3674 22.0821 29.3674 21.429C29.3674 19.9073 26.9271 18.7633 24.8623 18.7633C22.6175 18.7633 20.2272 19.7174 20.2272 22.2554C20.2272 23.475 20.6648 24.7767 23.0707 25.3799L26.0574 26.1252C26.9638 26.3495 27.1881 26.8571 27.1881 27.3159C27.1881 28.0789 26.4284 28.8242 25.0578 28.8242C22.3731 28.8242 22.7497 26.7616 21.3102 26.7616C20.6659 26.7616 20.1961 27.2037 20.1961 27.8401C20.1961 29.0775 21.6978 30.7269 25.0578 30.7269Z" fill="#52D789"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__nav-social_item">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#555555"/>
+                                <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M22.429 21.969H26.143V23.819C26.678 22.755 28.05 21.799 30.111 21.799C34.062 21.799 35 23.917 35 27.803V35H31V28.688C31 26.475 30.465 25.227 29.103 25.227C27.214 25.227 26.429 26.572 26.429 28.687V35H22.429V21.969ZM15.57 34.83H19.57V21.799H15.57V34.83ZM20.143 17.55C20.1431 17.8853 20.0767 18.2172 19.9474 18.5266C19.8181 18.8359 19.6287 19.1165 19.39 19.352C18.9064 19.8326 18.2518 20.1017 17.57 20.1C16.8894 20.0995 16.2363 19.8312 15.752 19.353C15.5142 19.1167 15.3254 18.8358 15.1963 18.5264C15.0673 18.217 15.0006 17.8852 15 17.55C15 16.873 15.27 16.225 15.753 15.747C16.2369 15.2682 16.8902 14.9997 17.571 15C18.253 15 18.907 15.269 19.39 15.747C19.872 16.225 20.143 16.873 20.143 17.55Z" fill="#52D789"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">2024 © LeadsBox.ru. "ООО Департамент Ф53". Все права защищены</div>
+        </div>
+    </div>
+
+    <!--  Modal form -->
+    <div class="modal hide" id="modal">
+        <div class="modal__content">
+            <div class="banner__form">
+                <div class="banner__close" id="modalCloseBtn">
+                    <div class="banner__close-icn"></div>
+                </div>
+                <p class="banner__title">Оставьте заявку</p>
+                <div class="banner__form-group">
+                    <div class="banner__form-control">
+                        <input type="text" placeholder="ваше имя" class="banner__form-input">
+                        <input type="text" placeholder="email" class="banner__form-input">
+                    </div>
+                    <div class="banner__form-control">
+                        <input type="submit" placeholder="Отправить" class="banner__form-btn">
+                        <div class="banner__form-info">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="banner__form-link pink">Политикой конфиденциальности</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__overlay" id="modalCloseOverlay"></div>
+    </div>
+
+    <!--  Global overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

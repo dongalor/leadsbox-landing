@@ -1,0 +1,172 @@
+@import "variable";
+
+// media
+@mixin max-media480 {
+  @media (max-width: #{479px}) {
+    @content;
+  }
+}
+
+@mixin max-media600 {
+  @media (max-width: #{599px}) {
+    @content;
+  }
+}
+
+@mixin max-media768 {
+  @media (max-width: #{767px}) {
+    @content;
+  }
+}
+
+@mixin max-media991 {
+  @media (max-width: #{991px}) {
+    @content;
+  }
+}
+
+@mixin max-media1023 {
+  @media (max-width: #{1023px}) {
+    @content;
+  }
+}
+
+@mixin max-media1280 {
+  @media (max-width: #{1279px}) {
+    @content;
+  }
+}
+@mixin max-media1400 {
+  @media (max-width: #{1399px}) {
+    @content;
+  }
+}
+@mixin max-media1600 {
+  @media (max-width: #{1599px}) {
+    @content;
+  }
+}
+
+// other mixins
+@mixin flex($aitem, $jcontent) {
+  display: flex;
+  align-items: $aitem;
+  justify-content: $jcontent;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Sizing shortcuts
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+// Common styles for headers
+@mixin title-h1 {
+  font: 120px/120px var(--font-bold);
+  @include max-media1400 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  @include max-media768 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  @include max-media480 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@mixin title-h2 {
+  font: 90px/90px var(--font-bold);
+  @include max-media1400 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  @include max-media1280 {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  @include max-media768 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  @include max-media480 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+@mixin title-h3 {
+  font: 30px/36px var(--font-raleway-medium);
+  @include max-media1400 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @include max-media768 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @include max-media480 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@mixin title-h4 {
+  font: 24px/33px var(--font-raleway-semiBold);
+  @include max-media1280 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  @include max-media480 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@mixin titleh5 {
+  @include change-font(font-bold-);
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+@mixin titleh6 {
+  @include titleh5;
+}
+
+// font size for paragraphs
+@mixin p-large {
+  font: 18px/21px var(--font-raleway-medium);
+  @include max-media1400 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  @include max-media480 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@mixin p-normal {
+  font: 16px/22px var(--font-raleway-semiBold);
+}
+
+@mixin p-small {
+
+}
