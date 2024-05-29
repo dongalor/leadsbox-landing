@@ -1,0 +1,8 @@
+.d-none {
+  display: none;
+}
+
+.banner__map {
+  border-radius: 0% !important;
+  border: 0 !important;
+}
