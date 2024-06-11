@@ -1,0 +1,7 @@
+.inputInvalid {
+  border: 2px dashed red !important;
+}
+
+.inputInvalidRequired {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}

@@ -3,6 +3,23 @@
  * URL: https://bootstrapmade.com/php-email-form/
  * Author: BootstrapMade.com
  */
+
+function validateField(name, form) {
+  let thisForm = form;
+  var selectElement = thisForm.querySelector(`input[name="${name}"]`);
+
+  if (selectElement.value == "") {
+    var selectElement = thisForm.querySelector(`input[name="${name}"]`);
+    selectElement.classList.add("inputInvalid");
+
+    return false;
+  } else {
+    selectElement.classList.remove("inputInvalid");
+  }
+
+  return true;
+}
+
 (function () {
   "use strict";
 
@@ -17,6 +34,20 @@
       let action = thisForm.getAttribute("action");
       let recaptcha = thisForm.getAttribute("data-recaptcha-site-key");
 
+      let formData = new FormData(thisForm);
+
+      let validation = true;
+
+      validation = validateField("name", thisForm);
+      validation = validateField("email", thisForm);
+      validation = validateField("phone", thisForm);
+      validation = validateField("phone", thisForm);
+      validation = validateField("subject", thisForm);
+
+      if (!validation) {
+        return;
+      }
+
       if (!action) {
         displayError(thisForm, "The form action property is not set!");
         return;
@@ -24,8 +55,6 @@
       thisForm.querySelector(".loading").classList.remove("d-none");
       thisForm.querySelector(".error-message").classList.add("d-none");
       thisForm.querySelector(".sent-message").classList.add("d-none");
-
-      let formData = new FormData(thisForm);
 
       let jsonForm = {
         name: formData.get("name"),

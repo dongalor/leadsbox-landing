@@ -47,6 +47,7 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/general.css" />
   </head>
   <body>
     <!--  Header  -->
@@ -802,52 +803,70 @@
             <div class="banner__close-icn"></div>
           </div>
           <p class="banner__title">Оставьте заявку</p>
-          <div class="banner__form-group">
-            <div class="banner__form-control">
-              <input
-                type="text"
-                placeholder="ваше имя"
-                class="banner__form-input"
-              />
-              <div
-                style="
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-between;
-                  align-items: center;
-                  width: 100%;
-                "
-              >
+          <form
+            action="https://app.leadsbox.ru/api/contact"
+            method="post"
+            role="form"
+            class="php-email-form"
+            id="contact-form"
+          >
+            <div class="banner__form-group">
+              <div class="banner__form-control">
                 <input
-                  style="flex: 1; width: 100%; margin-right: 5pt"
                   type="text"
-                  placeholder="Телефон"
-                  class="banner__form-input"
+                  placeholder="ваше имя"
+                  class="banner__form-input form-name-input"
+                  name="name"
                 />
-                <input
-                  style="flex: 1; width: 100%"
-                  type="text"
-                  placeholder="Email"
-                  class="banner__form-input"
-                />
-              </div>
-            </div>
-            <div class="banner__form-control">
-              <input
-                type="submit"
-                placeholder="Отправить"
-                class="banner__form-btn"
-                value="Отправить"
-              />
-              <div class="banner__form-info">
-                Нажимая на кнопку, вы даете согласие на обработку персональных
-                данных и соглашаетесь с
-                <a href="#" class="banner__form-link pink"
-                  >Политикой конфиденциальности</a
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                  "
                 >
+                  <input
+                    style="flex: 1; width: 100%; margin-right: 5pt"
+                    type="text"
+                    placeholder="Телефон"
+                    name="phone"
+                    class="banner__form-input"
+                  />
+                  <input
+                    style="flex: 1; width: 100%"
+                    type="text"
+                    placeholder="Email"
+                    name="email"
+                    class="banner__form-input"
+                  />
+                </div>
+              </div>
+              <div class="banner__form-control">
+                <input
+                  type="submit"
+                  placeholder="Отправить"
+                  class="banner__form-btn"
+                  value="Отправить"
+                />
+                <div class="banner__form-info">
+                  <div class="loading d-none">Загрузка...</div>
+                  <div class="error-message d-none"></div>
+                  <div class="sent-message d-none">
+                    Ваше сообщение отправлено, мы скоро свяжемся с вами!
+                  </div>
+                </div>
+                <div class="banner__form-info">
+                  Нажимая на кнопку, вы даете согласие на обработку персональных
+                  данных и соглашаетесь с
+                  <a href="#" class="banner__form-link pink"
+                    >Политикой конфиденциальности</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
       <div class="modal__overlay" id="modalCloseOverlay"></div>
