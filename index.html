@@ -243,7 +243,7 @@
                 <p class="banner__txt">
                   Эксклюзивные офферы.<br />Российская партнёрская сеть.
                 </p>
-                <div class="banner__btn" id="modalBtn">оставить заявку</div>
+                <div class="banner__btn" id="modalBtn1">оставить заявку</div>
               </div>
 
               <div class="banner__img">
@@ -417,7 +417,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#" id="modalBtn2" class="banner__btn pink-bg"
+              <a href="#" id="modalBtn" class="banner__btn pink-bg"
                 >оставить заявку</a
               >
             </div>
@@ -620,12 +620,20 @@
                       name="email"
                     />
                   </div>
-                  <input
-                    type="text"
-                    placeholder="тема сообщения"
-                    class="banner__form-input"
-                    name="subject"
-                  />
+                  <div class="banner__form-control--double">
+                    <input
+                      type="text"
+                      placeholder="телефон"
+                      class="banner__form-input"
+                      name="phone"
+                    />
+                    <input
+                      type="text"
+                      placeholder="тема сообщения"
+                      class="banner__form-input"
+                      name="subject"
+                    />
+                  </div>
                   <textarea
                     placeholder="Сообщение"
                     name="message"
@@ -785,7 +793,10 @@
 
     <!--  Modal form -->
     <div class="modal hide" id="modal">
-      <div class="modal__content">
+      <div
+        class="modal__content"
+        style="width: 80vw !important; height: 60vh !important"
+      >
         <div class="banner__form">
           <div class="banner__close" id="modalCloseBtn">
             <div class="banner__close-icn"></div>
@@ -798,11 +809,28 @@
                 placeholder="ваше имя"
                 class="banner__form-input"
               />
-              <input
-                type="text"
-                placeholder="email"
-                class="banner__form-input"
-              />
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 100%;
+                "
+              >
+                <input
+                  style="flex: 1; width: 100%; margin-right: 5pt"
+                  type="text"
+                  placeholder="Телефон"
+                  class="banner__form-input"
+                />
+                <input
+                  style="flex: 1; width: 100%"
+                  type="text"
+                  placeholder="Email"
+                  class="banner__form-input"
+                />
+              </div>
             </div>
             <div class="banner__form-control">
               <input
