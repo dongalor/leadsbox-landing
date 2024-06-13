@@ -36,10 +36,10 @@
     //  ------------------------- modal -------------------------
     // show modal
     let modalBtn = document.getElementById("modalBtn");
-    let modalBtn1 = document.getElementById("modalBtn1");
+    // let modalBtn1 = document.getElementById("modalBtn1");
     let modalBtn2 = document.getElementById("modalBtn2");
     modalBtn.addEventListener("click", showModal);
-    modalBtn1.addEventListener("click", showModal);
+    // modalBtn1.addEventListener("click", showModal);
     // modalBtn2.addEventListener("click", showModal);
 
     function showModal(e) {
