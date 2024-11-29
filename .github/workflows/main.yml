@@ -16,13 +16,9 @@ jobs:
           which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y  )
           which rsync || ( apt-get update -y && apt-get install rsync -y )
           eval $(ssh-agent -s)
-          ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 -d)
+          ssh-add <(echo ${{ secrets.SSH_KEY}} | base64 -d)
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
+          ssh-keyscan ${{secrets.HOST}} >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
-          scp -r * deploy@$SERVER_IP:~/www/public
-    env:
-      SSH_PRIVATE_KEY: ${{secrets.SSH_KEY}}
-      SERVER_IP: ${{secrets.SERVER_IP}}
-      CI: false
+          rsync -avz --delete . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
