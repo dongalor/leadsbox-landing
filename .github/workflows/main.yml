@@ -21,4 +21,4 @@ jobs:
           chmod 700 ~/.ssh
           ssh-keyscan ${{secrets.HOST}} >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
-          rsync -avz --delete . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
+          rsync -az --delete . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
