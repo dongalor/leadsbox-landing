@@ -97,7 +97,7 @@ function validateField(name, form) {
         thisForm.querySelector(".loading").classList.add("d-none");
         if (data.result == "success") {
           thisForm.querySelector(".sent-message").classList.remove("d-none");
-          // thisForm.reset();
+          thisForm.reset();
         } else {
           throw new Error(
             data
