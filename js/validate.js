@@ -45,6 +45,7 @@ function validateField(name, form) {
       validation = validateField("subject", thisForm);
 
       if (!validation) {
+        console.log("Validation failed");
         return;
       }
 
@@ -57,47 +58,26 @@ function validateField(name, form) {
       thisForm.querySelector(".sent-message").classList.add("d-none");
 
       let jsonForm = {
-        name: formData.get("name"),
-        email: formData.get("email"),
+        from: `${formData.get("name")} <${formData.get("email")}>`,
+        to: "support@leadsbox.ru",
         subject: formData.get("subject"),
-        phone: formData.get("phone"),
-        message: formData.get("message"),
+        message: `${formData.get("phone")}\n ${formData.get("message")}`,
       };
 
       console.log({ jsonForm });
 
-      if (recaptcha) {
-        if (typeof grecaptcha !== "undefined") {
-          grecaptcha.ready(function () {
-            try {
-              grecaptcha
-                .execute(recaptcha, { action: "php_email_form_submit" })
-                .then((token) => {
-                  formData.set("recaptcha-response", token);
-                  php_email_form_submit(thisForm, action, formData);
-                });
-            } catch (error) {
-              displayError(thisForm, error);
-            }
-          });
-        } else {
-          displayError(
-            thisForm,
-            "The reCaptcha javascript API url is not loaded!"
-          );
-        }
-      } else {
-        php_email_form_submit(thisForm, action, jsonForm);
-      }
+      php_email_form_submit(thisForm, action, jsonForm);
     });
   });
 
   function php_email_form_submit(thisForm, action, formData) {
+    console.log({ action });
     fetch(action, {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
         "Content-Type": "application/json",
+        Authorization: "Bearer XOTfTBGQFjXNwhFGYLYwf0AYpnzdxdwxH4yoXldZD18=",
       },
     })
       .then((response) => {
@@ -115,7 +95,7 @@ function validateField(name, form) {
         thisForm.querySelector(".loading").classList.add("d-none");
         if (data.result == "success") {
           thisForm.querySelector(".sent-message").classList.remove("d-none");
-          thisForm.reset();
+          // thisForm.reset();
         } else {
           throw new Error(
             data
