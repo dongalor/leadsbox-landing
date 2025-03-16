@@ -73,7 +73,6 @@ function validateField(name, form) {
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    console.log({ action });
     fetch(action, {
       method: "POST",
       body: JSON.stringify(formData),
@@ -83,7 +82,9 @@ function validateField(name, form) {
       },
     })
       .then((response) => {
+        console.log({ response });
         if (response.ok) {
+          console.log("response ok");
           return response.text();
         } else {
           throw new Error(
@@ -95,7 +96,7 @@ function validateField(name, form) {
         const data = JSON.parse(stringData);
 
         thisForm.querySelector(".loading").classList.add("d-none");
-        if (data.result == "success") {
+        if (data.status == "mail sent") {
           thisForm.querySelector(".sent-message").classList.remove("d-none");
           thisForm.reset();
         } else {
