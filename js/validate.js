@@ -61,7 +61,7 @@ function validateField(name, form) {
         from: formData.get("email"),
         to: "support@leadsbox.ru",
         subject: formData.get("subject"),
-        message: `${formData.get("name")}\n ${formData.get(
+        html: `${formData.get("name")}\n ${formData.get(
           "phone"
         )}\n ${formData.get("message")}`,
       };
