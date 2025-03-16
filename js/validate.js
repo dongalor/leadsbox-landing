@@ -83,7 +83,7 @@ function validateField(name, form) {
       },
     })
       .then((response) => {
-        if (response.status) {
+        if (!response.error) {
           return response.text();
         } else {
           throw new Error(
@@ -108,6 +108,7 @@ function validateField(name, form) {
         }
       })
       .catch((error) => {
+        console.log(error);
         displayError(thisForm, error);
       });
   }
