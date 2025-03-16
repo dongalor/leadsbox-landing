@@ -68,8 +68,6 @@ function validateField(name, form) {
         )}`,
       };
 
-      console.log({ jsonForm });
-
       php_email_form_submit(thisForm, action, jsonForm);
     });
   });
@@ -84,7 +82,6 @@ function validateField(name, form) {
       },
     })
       .then((response) => {
-        console.log({ response });
         if (response.ok) {
           console.log("response ok");
           return response.text();
