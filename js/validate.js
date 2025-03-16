@@ -83,8 +83,7 @@ function validateField(name, form) {
       },
     })
       .then((response) => {
-        console.log({ response });
-        if (!response.error) {
+        if (response.ok) {
           return response.text();
         } else {
           throw new Error(
