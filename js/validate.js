@@ -58,12 +58,12 @@ function validateField(name, form) {
       thisForm.querySelector(".sent-message").classList.add("d-none");
 
       let jsonForm = {
-        from: ,
+        from: "support@leadsbox.ru",
         to: "support@leadsbox.ru",
         subject: formData.get("subject"),
-        html: `Сообщение от: ${formData.get("email")}<br/> ${formData.get("name")}<br/> ${formData.get(
-          "phone"
-        )}<hr/> ${formData.get("message")}`,
+        html: `Сообщение от: ${formData.get("email")}<br/> ${formData.get(
+          "name"
+        )}<br/> ${formData.get("phone")}<hr/> ${formData.get("message")}`,
       };
 
       console.log({ jsonForm });
@@ -83,7 +83,7 @@ function validateField(name, form) {
       },
     })
       .then((response) => {
-        console.log({response})
+        console.log({ response });
         if (!response.error) {
           return response.text();
         } else {
