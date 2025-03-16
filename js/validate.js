@@ -61,9 +61,9 @@ function validateField(name, form) {
         from: formData.get("email"),
         to: "support@leadsbox.ru",
         subject: formData.get("subject"),
-        html: `${formData.get("name")}\n ${formData.get(
+        html: `Сообщение от: ${formData.get("name")}<br/> ${formData.get(
           "phone"
-        )}\n ${formData.get("message")}`,
+        )}<hr/> ${formData.get("message")}`,
       };
 
       console.log({ jsonForm });
