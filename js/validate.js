@@ -58,10 +58,12 @@ function validateField(name, form) {
       thisForm.querySelector(".sent-message").classList.add("d-none");
 
       let jsonForm = {
-        from: `${formData.get("name")} <${formData.get("email")}>`,
+        from: formData.get("email"),
         to: "support@leadsbox.ru",
         subject: formData.get("subject"),
-        message: `${formData.get("phone")}\n ${formData.get("message")}`,
+        message: `${formData.get("name")}\n ${formData.get(
+          "phone"
+        )}\n ${formData.get("message")}`,
       };
 
       console.log({ jsonForm });
